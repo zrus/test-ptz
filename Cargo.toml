@@ -1,0 +1,14 @@
+[package]
+name = "test-ptz"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+onvif = { git = "https://github.com/lumeohq/onvif-rs" }
+url = { version = "2", features = ["serde"] }
+tokio = { version = "*", features = ["full"] }
+tokio-util = "*"
+async-std = "*"
+xsd-types = { git = "https://github.com/lumeohq/xsd-parser-rs", rev = "7f3d433" }
